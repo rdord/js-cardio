@@ -64,8 +64,7 @@ const counted = data.reduce((obj, x) => {
 // console.log(counted)
 
 
-// Some and Every Checks
-// Array.prototype.some() // is at least one person 19 or older?
+// 9. Is at least one person 19 or older?
 const people2 = [
   { name: 'Wes', year: 1988 },
   { name: 'Kait', year: 1986 },
@@ -76,13 +75,12 @@ const people2 = [
 const adults = people2.some(x => (new Date()).getFullYear() - x.year > 18)
 // console.log(adults)
 
-// Array.prototype.every() // is everyone 19 or older?
+// 10. Is everyone 19 or older?
 const adultsAll = people2.every(x => (new Date()).getFullYear() - x.year > 18)
 // console.log(adultsAll) 
 
 
-// Array.prototype.find()
-// Find the comment with the ID of 823423
+// 11. Find the comment with the ID of 823423
 const comments = [
   { text: 'Love this!', id: 523423 },
   { text: 'Super good', id: 823423 },
@@ -94,11 +92,10 @@ const comments = [
 const found = comments.find(x => x.id === 823423)
 // console.log(found)
 
-// Array.prototype.findIndex()
-// Find the comment with this ID
+// 12. Find the comment with this ID
 const foundIndex = comments.findIndex(x => x.id === 823423)
 // console.log(foundIndex)
 
-// Delete the comment with the ID of 823423
+// 13. Delete the comment with the ID of 823423
 comments.splice(foundIndex, 1)
 // console.table(comments) 
