@@ -92,7 +92,7 @@ const comments = [
 const found = comments.find(x => x.id === 823423)
 // console.log(found)
 
-// 12. Find the comment with this ID
+// 12. Find the comment index with this ID
 const foundIndex = comments.findIndex(x => x.id === 823423)
 // console.log(foundIndex)
 
